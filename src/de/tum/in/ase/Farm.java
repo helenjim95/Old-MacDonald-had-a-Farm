@@ -1,12 +1,13 @@
 package de.tum.in.ase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Represents a Farm
  */
 public class Farm {
-    private List<Animal> animals;
+    private List<Animal> animals = new ArrayList<>();
 
     public Farm() {}
 
@@ -19,9 +20,7 @@ public class Farm {
     }
 
     public void addAnimal(Animal animal) {
-        if (animal != null) {
-            animals.add(animal);
-        }
+        animals.add(animal);
     }
 
     public void feedAllAnimals() {
