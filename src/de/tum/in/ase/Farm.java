@@ -6,7 +6,7 @@ import java.util.List;
  * Represents a Farm
  */
 public class Farm {
-    List<Animal> animals;
+    private List<Animal> animals;
 
     public Farm() {}
 
@@ -19,10 +19,12 @@ public class Farm {
     }
 
     public void addAnimal(Animal animal) {
-        animals.add(animal);
+        if (animal != null) {
+            animals.add(animal);
+        }
     }
 
-    public void feedAllAnimal() {
+    public void feedAllAnimals() {
         if (animals.size() > 0) {
             for (Animal animal : animals) {
                 animal.messageOnFeed();

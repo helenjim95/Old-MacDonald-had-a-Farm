@@ -1,6 +1,6 @@
 package de.tum.in.ase;
 
-public class Cow extends Animal implements Rideable, Mikable{
+public class Cow extends Animal implements Rideable, Milkable {
 
     public Cow(String name) {
         super(name);

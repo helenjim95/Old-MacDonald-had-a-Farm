@@ -1,6 +1,6 @@
 package de.tum.in.ase;
 
-public class Goat extends Animal implements Mikable {
+public class Goat extends Animal implements Milkable {
 
     public Goat(String name) {
         super(name);

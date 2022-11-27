@@ -1,6 +1,6 @@
 package de.tum.in.ase;
 
-public interface Mikable {
+public interface Milkable {
 
     String messageOnMilk();
 }
